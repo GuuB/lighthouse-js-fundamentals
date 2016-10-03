@@ -1,23 +1,16 @@
 for (var i = 100; i <= 200; i++)
 {
+	var output = "";
 
- 	if ( i % 3 === 0 && i % 4 === 0)
+	if (i % 3 === 0)
 	{
-		console.log("LoopyLighthouse");
+		output += "Loopy";
 	}
 
-	else if (i % 3 === 0)
+	if (i % 4 === 0)
 	{
-		console.log("Loopy");
-	}
-
-	else if (i % 4 === 0)
-	{
-		console.log("Lighthouse");
+		output += "Lighthouse";
 	}
 	
-	else
-	{
-		console.log(i);
-	}
+	console.log(output === "" ? i : output);
 }
